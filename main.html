@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keyword" content="">
+		<meta name="description" content="">
+		<meta name="author" content="JunHee Won">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+		<title>JE:US | 명품감귤생산 데이터 농법</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/css/select2.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="innerWrap bodyWrap">
+		<div class="mainWrap">
+			<header class="header">
+				<h1 class="logo"></h1>
+				<div class="wrapper">
+					<select name="" id="" class="selectFarm select">
+						<option value="">농가선택</option>
+						<option value="">농가A</option>
+						<option value="">농가B</option>
+						<option value="">농가C</option>
+						<option value="">농가D</option>
+						<option value="">농가E</option>
+					</select>
+					<p class="showFarm mt10">현재 농가 : <span class="font-green font-bold ellipsis">농가A</span></p>
+				</div>
+			</header>
+			<div class="main" role="main">
+				<h2 class="secTitle mt40">실시간 모니터링</h2>
+				<div class="gridWrap mt30">
+					<div class="col_lg6 col_md6 col_sm6 monitering">
+						<h3 class="contTitle">온도<i class="fas fa-thermometer-half ml5"></i></h3>
+						<span class="data temperature">18</span>
+						<span class="measurement">&#176;C</span>
+					</div>
+					<div class="col_lg6 col_md6 col_sm6 monitering">
+						<h3 class="contTitle">습도<i class="fas fa-tint ml5"></i></h3>
+						<span class="data humidity">66</span>
+						<span class="measurement">&#37;</span>
+					</div>
+				</div>
+				<div class="gridWrap mt30">
+					<div class="col_lg6 col_md6 col_sm6 monitering">
+						<h3 class="contTitle">일사량<i class="fas fa-sun ml5"></i></h3>
+						<span class="data insolation">3</span>
+						<span class="measurement">W/m&#178;</span>
+					</div>
+					<div class="col_lg6 col_md6 col_sm6 monitering">
+						<h3 class="contTitle">기압<i class="fas fa-tachometer-alt ml5"></i></h3>
+						<span class="data atmosphericPressure">1</span>
+						<span class="measurement">atm</span>
+					</div>
+				</div>
+
+				<h2 class="secTitle mt40">데이터 조회</h2>
+				<ul class="dataDivision">
+					<li class="on">온도 보기</li>
+					<li>당도 보기</li>
+				</ul>
+
+				<div class="tabSection on">
+					<ul class="dateNavigation">
+						<li class="on">일별</li>
+						<li>주별</li>
+						<li>월별</li>
+					</ul>
+					<div class="dataTab date on">
+						<div class="datePickerWrap">
+							<div class="wrapper date on">
+								<select name="" id="">
+									<option value="">년</option>
+									<option value="">2021</option>
+									<option value="">2020</option>
+									<option value="">2019</option>
+								</select>
+								<select name="" id="">
+									<option value="">월</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+									<option value="">5</option>
+									<option value="">6</option>
+									<option value="">7</option>
+									<option value="">8</option>
+									<option value="">9</option>
+									<option value="">10</option>
+									<option value="">11</option>
+									<option value="">12</option>
+								</select>
+								<select name="" id="">
+									<option value="">일</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+									<option value="">5</option>
+									<option value="">6</option>
+									<option value="">7</option>
+									<option value="">8</option>
+									<option value="">9</option>
+									<option value="">10</option>
+									<option value="">11</option>
+									<option value="">12</option>
+									<option value="">13</option>
+									<option value="">14</option>
+									<option value="">15</option>
+									<option value="">16</option>
+									<option value="">17</option>
+									<option value="">18</option>
+									<option value="">19</option>
+									<option value="">20</option>
+									<option value="">21</option>
+									<option value="">22</option>
+									<option value="">23</option>
+									<option value="">24</option>
+									<option value="">25</option>
+									<option value="">27</option>
+									<option value="">28</option>
+									<option value="">29</option>
+									<option value="">30</option>
+									<option value="">31</option>
+								</select>
+							</div>
+							<div class="wrapper week">
+								<select name="" id="">
+									<option value="">년</option>
+									<option value="">2021</option>
+									<option value="">2020</option>
+									<option value="">2019</option>
+								</select>
+								<select name="" id="">
+									<option value="">월</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+									<option value="">5</option>
+									<option value="">6</option>
+									<option value="">7</option>
+									<option value="">8</option>
+									<option value="">9</option>
+									<option value="">10</option>
+									<option value="">11</option>
+									<option value="">12</option>
+								</select>
+								<select name="" id="">
+									<option value="">주차</option>
+									<option value="">1주차</option>
+									<option value="">2주차</option>
+									<option value="">3주차</option>
+									<option value="">4주차</option>
+									<option value="">5주차</option>
+								</select>
+							</div>
+							<div class="wrapper month">
+								<select name="" id="">
+									<option value="">년</option>
+									<option value="">2021</option>
+									<option value="">2020</option>
+									<option value="">2019</option>
+								</select>
+								<select name="" id="">
+									<option value="">월</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+									<option value="">5</option>
+									<option value="">6</option>
+									<option value="">7</option>
+									<option value="">8</option>
+									<option value="">9</option>
+									<option value="">10</option>
+									<option value="">11</option>
+									<option value="">12</option>
+								</select>
+							</div>
+							<button type="button" class="btn btn-green searchBtn">검색</button>
+						</div>
+						<div class="gridWrap chartSec">
+							<div class="col_lg12 col_md12 col_sm12 temperature contWrap on">
+								<div class="chartWrap">
+									<canvas id="temperature" class="chart" width="600" height="250"></canvas>
+								</div>
+							</div>
+							<div class="col_lg12 col_md12 col_sm12 humidty contWrap">
+								<div class="chartWrap">
+									<canvas id="humidty" class="chart" width="600" height="250"></canvas>
+								</div>
+							</div>
+							<div class="col_lg12 col_md12 col_sm12 insolation contWrap">
+								<div class="chartWrap">
+									<canvas id="insolation" class="chart" width="600" height="250"></canvas>
+								</div>
+							</div>
+						</div>
+						<ul class="inlineWrap viewTypeWrap">
+							<button type="button" class="viewType btn btn-transparent active">온도</button>
+							<button type="button" class="viewType btn btn-transparent">습도</button>
+							<button type="button" class="viewType btn btn-transparent">일사량</button>
+						</ul>
+					</div>
+				</div>
+
+				<div class="tabSection mt30">
+					<div class="brixSec">
+						<div class="flexRowWrap">
+							<select name="" id="" class="mr5">
+								<option value="">년</option>
+								<option value="">2021</option>
+								<option value="">2020</option>
+								<option value="">2019</option>
+							</select>
+							<select name="" id="" class="mr5">
+								<option value="">월</option>
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+								<option value="">5</option>
+								<option value="">6</option>
+								<option value="">7</option>
+								<option value="">8</option>
+								<option value="">9</option>
+								<option value="">10</option>
+								<option value="">11</option>
+								<option value="">12</option>
+							</select>
+							<select name="" id="">
+								<option value="">주차</option>
+								<option value="">1주차</option>
+								<option value="">2주차</option>
+								<option value="">3주차</option>
+								<option value="">4주차</option>
+								<option value="">5주차</option>
+							</select>
+							<button type="button" class="btn btn-green searchBtn">검색</button>
+						</div>
+						<div class="gridWrap chartSec">
+							<div class="col_lg12 col_md12 col_sm12 brix contWrap on">
+								<div class="chartWrap">
+									<canvas id="brix" class="chart" width="600" height="250"></canvas>
+								</div>
+							</div>
+						</div>
+						<p class="font-navy">&middot; 위 막대그래프를 터치하시면 각 당도에 해당하는 나무가 아래 식재도에 표시됩니다.</p>
+						<div class="tableWrap">
+							<table class="brixMap">
+								<caption>식재도</caption>
+								<tr>
+									<th> </th>
+									<th>1</th>
+									<th>2</th>
+									<th>3</th>
+									<th>4</th>
+									<th>5</th>
+									<th>6</th>
+									<th>7</th>
+									<th>8</th>
+									<th>9</th>
+									<th>10</th>
+									<th>11</th>
+									<th>12</th>
+									<th>13</th>
+									<th>14</th>
+									<th>15</th>
+									<th>16</th>
+									<th>17</th>
+									<th>18</th>
+									<th>19</th>
+									<th>20</th>
+								</tr>
+								<tr>
+									<th>1</th>
+									<td>66</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>2</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>3</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>4</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>5</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>6</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>7</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>8</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>9</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>10</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>11</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>12</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>13</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>14</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>15</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>16</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>17</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>18</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>19</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>20</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="flexRowWrap spaceBetween">
+			<div class="logo"></div>
+			<div class="flexColWrap">
+				<button type="button" class="btn btn-gray logoutBtn" onclick="location.href='index.html'">로그아웃</button>
+				<a href="mypage.html"  class="changePwBtn">비밀번호 변경</a>
+			</div>
+		</div>
+		<p class="mt20 font-s14">copyrightⓒ 2008 All rights reserved by JEUS</p>
+	</footer>
+	<script src="js/jQuery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/js/select2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/07af8a896d.js" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

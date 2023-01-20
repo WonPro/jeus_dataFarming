@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keyword" content="">
+		<meta name="description" content="">
+		<meta name="author" content="JunHee Won">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+		<title>JE:US | 명품감귤생산 데이터 농법</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div class="innerWrap bodyWrap">
+			<div class="loginWrap">
+				<h1 class="logo"></h1>
+				<h2 class="siteTitle"></h2>
+				<div class="inlineWrap mt30">
+					<label for=""><i class="fas fa-user"></i>휴대폰번호</label>
+					<input type="tel" name="" id="userId" placeholder="숫자만 입력해주세요" onkeydown="onlyNumber(event)">
+				</div>
+				<div class="inlineWrap mt20">
+					<label for="">비밀번호</label>
+					<input type="password" name="" id="" placeholder="비밀번호를 입력해주세요">
+				</div>
+				<div class="inlineWrap mt20">
+					<button type="button" class="btn btn-green btnSubmit">입장하기</button>
+				</div>
+				<div class="contactWrap mt10">
+					<a href="#" onclick="openPopup('FindPassword')">비밀번호찾기</a>
+				</div>
+			</div>
+		
+			<div id="modalWrap" class="modalWrap">
+				
+				<div id="popupFindPassword" class="modalContainer">
+					<h2 class="popupTitle">비밀번호 찾기</h2>
+					<p class="popupCont">휴대폰 본인인증을 통해서만 비밀번호를 찾아보실 수 있습니다.</p>
+					<button type="button" class="btn btn-green btnSubmit">휴대폰 인증</button>
+					<button type="button" class="btn btn-white btnClosePopup" onclick="closePopup('FindPassword')"></button>
+				</div>
+		
+				<!-- 
+					비밀번호 찾기 결과창 입니다. <span class="userPassword"></span> 안에 해당 사용자의 비밀번호를 넣어주세요.
+				-->
+				<div id="popupFindPasswordResult" class="modalContainer">
+					<h2 class="popupTitle">비밀번호 찾기결과</h2>
+					<p class="popupCont">고객님의 비밀번호는 아래와 같습니다.</p>
+					<div class="popupContBox">
+						<span class="userPassword">youngilee123!@#</span>
+					</div>
+					<button type="button" class="btn btn-green btnSubmit" onclick="closePopup('FindPasswordResult')">로그인하기</button>
+				</div>
+
+				<!--
+					첫 로그인 사용자의 경우 무조건 비밀번호를 변경하도록 요청하셔서 띄운 팝업입니다.
+					변경 버튼 누르면 바로 비밀번호 변경창으로 이동하며 닫기버튼을 누르면 기존 패스워드를 유지합니다.
+					첫 로그인의 경우에만 뜨는 팝업이며 이후 발생하지 않습니다.
+				-->
+				<div id="popupFirstLogin" class="modalContainer">
+					<h2 class="popupTitle">가입을 환영합니다!</h2>
+					<p class="popupCont">첫 로그인의 경우 비밀번호를 변경해주셔야 합니다.</p>
+					<button type="button" class="btn btn-green btnSubmit" onclick="closePopup('FirstLogin')">비밀번호 변경하기</button>
+					<button type="button" class="btn btn-white btnClosePopup" onclick="closePopup('FirstLogin')"></button>
+				</div>
+			</div>
+		</div>
+		<script src="js/jQuery.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
